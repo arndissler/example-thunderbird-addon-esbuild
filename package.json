@@ -1,0 +1,30 @@
+{
+  "name": "example-thunderbird-addon-esbuild",
+  "version": "0.0.1",
+  "description": "A simple TypeScript based AddOn for Thunderbird built with esbuild.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist release",
+    "build": "node ./build.mjs"
+  },
+  "keywords": [
+    "Thunderbird",
+    "AddOn",
+    "Extension",
+    "TypeScript",
+    "esbuild"
+  ],
+  "author": "Arnd Issler <email@arndissler.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "esbuild": "0.24.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

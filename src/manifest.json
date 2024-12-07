@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "author": "Arnd Issler",
+  "name": "Example for a TypeScript based AddOn for Thunderbird",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "example-thunderbird-addon-esbuild@arndissler.com"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Example Popup",
+    "default_popup": "./popup/popup.html",
+    "type": "button"
+  },
+  "permissions": ["action"]
+}
